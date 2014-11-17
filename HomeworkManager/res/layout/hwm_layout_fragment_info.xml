@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout android:id="@+id/hinfo_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout android:id="@+id/hinfo_name_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+        
+            <TextView android:id="@+id/hinfo_name_section_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginTop="@dimen/margin_small_vertical"
+                android:layout_marginBottom="@dimen/margin_small_vertical"
+                android:layout_marginLeft="@dimen/margin_small_horizontal"
+                android:layout_marginRight="@dimen/margin_small_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/hcreate_label_name"
+                android:textColor="@android:color/primary_text_dark"/>
+            
+            <EditText android:id="@+id/hinfo_name_section_edit"
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:inputType="text"
+                android:hint="@string/hcreate_edit_hint_name"/>
+            
+   		</LinearLayout>
+   		
+        <LinearLayout android:id="@+id/hinfo_class_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hinfo_name_section"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            
+            <TextView android:id="@+id/hinfo_class_section_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginTop="@dimen/margin_small_vertical"
+                android:layout_marginBottom="@dimen/margin_small_vertical"
+                android:layout_marginLeft="@dimen/margin_small_horizontal"
+                android:layout_marginRight="@dimen/margin_small_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/hcreate_label_class"
+                android:textColor="@android:color/primary_text_dark"/>
+            
+            <EditText android:id="@+id/hinfo_class_section_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:inputType="text"
+                android:hint="@string/hcreate_edit_hint_class"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/hinfo_subject_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large_vertical"
+            android:layout_below="@id/hinfo_class_section"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            
+            <TextView android:id="@+id/hinfo_subject_section_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginTop="@dimen/margin_small_vertical"
+                android:layout_marginBottom="@dimen/margin_small_vertical"
+                android:layout_marginLeft="@dimen/margin_small_horizontal"
+                android:layout_marginRight="@dimen/margin_small_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/hcreate_label_subject"
+                android:textColor="@android:color/primary_text_dark"/>
+            
+            <EditText android:id="@+id/hinfo_subject_section_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:inputType="text"
+                android:hint="@string/hcreate_edit_hint_subject"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/hinfo_assigned_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large_vertical"
+            android:layout_below="@id/hinfo_subject_section"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            
+            <TextView android:id="@+id/hinfo_assigned_section_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginTop="@dimen/margin_small_vertical"
+                android:layout_marginBottom="@dimen/margin_small_vertical"
+                android:layout_marginLeft="@dimen/margin_small_horizontal"
+                android:layout_marginRight="@dimen/margin_small_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/hcreate_label_assigned"
+                android:textColor="@android:color/primary_text_dark"/>
+            
+            <Button android:id="@+id/hinfo_assigned_section_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:onClick="pickDate"
+                android:text="@string/hcreate_main_choice"/>
+
+            <EditText android:id="@+id/hinfo_assigned_section_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:inputType="date"
+                android:hint="@string/hcreate_edit_hint_date"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/hinfo_due_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hinfo_assigned_section"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            
+            <TextView android:id="@+id/hinfo_due_section_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginTop="@dimen/margin_small_vertical"
+                android:layout_marginBottom="@dimen/margin_small_vertical"
+                android:layout_marginLeft="@dimen/margin_small_horizontal"
+                android:layout_marginRight="@dimen/margin_small_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/hcreate_label_due"
+                android:textColor="@android:color/primary_text_dark"/>
+
+            <Button android:id="@+id/hinfo_due_section_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:onClick="pickDate"
+                android:text="@string/hcreate_main_choice"/>
+            
+            <EditText android:id="@+id/hinfo_due_section_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:inputType="date"
+                android:hint="@string/hcreate_edit_hint_date"/>
+                        
+        </LinearLayout>
+        
+        <TextView android:id="@+id/hinfo_main_keywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small_vertical"
+            android:layout_marginBottom="@dimen/margin_small_vertical"
+            android:layout_marginLeft="@dimen/margin_small_horizontal"
+            android:layout_marginRight="@dimen/margin_small_horizontal"
+            android:layout_below="@id/hinfo_due_section"
+            android:text="@string/hcreate_main_label_keywords"
+            android:textColor="@android:color/primary_text_dark"/>
+        
+        <EditText android:id="@+id/hinfo_main_keywords_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small_vertical"
+            android:layout_marginBottom="@dimen/margin_large_vertical"
+            android:layout_marginLeft="@dimen/margin_small_horizontal"
+            android:layout_marginRight="@dimen/margin_small_horizontal"
+            android:layout_below="@id/hinfo_main_keywords"
+            android:inputType="textMultiLine"
+            android:hint="@string/hcreate_edit_hint_keywords"/>
+        
+   	</RelativeLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.pti.bem9.android.hwm.HomeworkManager" >
+
+    <group android:id="@+id/menu_actionbar_always">
+        <item android:id="@+id/menu_actionbar_add_new"
+            android:orderInCategory="1"
+            android:title="@string/menu_actionbar_title_add_new"
+            android:icon="@drawable/ic_menu_add"
+            android:showAsAction="always" />
+        <item android:id="@+id/menu_actionbar_remove"
+            android:orderInCategory="2"
+            android:title="@string/menu_actionbar_title_remove"
+            android:icon="@drawable/ic_menu_remove"
+            android:showAsAction="always" />
+        <item android:id="@+id/menu_actionbar_display_before"
+            android:orderInCategory="3"
+            android:title="@string/menu_actionbar_title_display_before"
+            android:icon="@drawable/ic_menu_display_before"
+            android:showAsAction="always" />
+        <item android:id="@+id/menu_actionbar_display_on"
+            android:orderInCategory="4"
+            android:title="@string/menu_actionbar_title_display_on"
+            android:icon="@drawable/ic_menu_display_on"
+            android:showAsAction="always" />
+    </group>
+    
+    <group android:id="@+id/menu_actionbar_optional">
+        <item android:id="@+id/menu_actionbar_refresh"
+            android:orderInCategory="5"
+            android:title="@string/menu_actionbar_title_refresh"
+            android:icon="@drawable/ic_menu_refresh"
+            android:showAsAction="ifRoom" />
+        <item android:id="@+id/menu_actionbar_exit"
+            android:orderInCategory="6"
+            android:title="@string/menu_actionbar_title_exit"
+            android:icon="@drawable/ic_menu_exit"
+            android:showAsAction="ifRoom" />
+        <item android:id="@+id/menu_menu_about"
+            android:orderInCategory="7"
+            android:title="@string/menu_menu_title_about"
+            android:showAsAction="never" />
+    </group>
+
+</menu>

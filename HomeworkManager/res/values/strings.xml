@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Semi-Common variables between the apps I make -->
+    
+    <string name="app_name">Homework Manager</string>
+    <string name="app_desc">Programming and Design by Bridger Maskrey. (bem9@students.pti.edu)\nDesigned for Mobile Development, PTI, 2014.\n</string>
+    <string name="app_version">v2.2.0</string>
+    <string name="app_return">Back</string>
+    <string name="app_rate">Rate App</string>
+    <string name="app_info">About Homework Manager</string>
+    <string name="app_package">edu.pti.students.bem9.android.hwm</string>
+    
+    <!-- App Specific Variables -->
+    
+    <string name="app_delete">Delete</string>
+    <string name="app_edit">Edit</string>
+    <string name="app_no_date">There was no date specified!</string>
+    
+    <!-- Menu Titles -->
+    <string name="menu_actionbar_title_add_new">Add new&#8230;</string>
+    <string name="menu_actionbar_title_remove">Remove&#8230;</string>
+    <string name="menu_actionbar_title_display_before">Display Before&#8230;</string>
+    <string name="menu_actionbar_title_display_on">Display On&#8230;</string>
+    <string name="menu_actionbar_title_refresh">Refresh</string>
+    <string name="menu_actionbar_title_exit">Exit</string>
+    <string name="menu_menu_title_about">About the App</string>
+    
+    <!-- List Adapter Resources -->
+    <string name="list_prefix_assign_date">Assigned:\u0020</string>
+    <string name="list_prefix_due_date">Due:\u0020</string>
+    <string name="list_prefix_keywords">Keywords:\u0020</string>
+    <string name="list_label_keywords_empty">None</string>
+    
+    <!-- Misc Hints -->
+    <string name="misc_search_hint">Search for Keyphrase</string>
+    
+    <!-- Homework Creation Fragment:Labels -->
+    <string name="hcreate_main_label">Add New Assignment</string>
+    <string name="hcreate_main_choice">Choose&#8230;</string>
+    <string name="hcreate_main_submit">Create New Assignment</string>
+    <string name="hcreate_main_label_keywords">Keywords (separate with \";\"):</string>
+    <string name="hcreate_label_name">Name*:</string>
+    <string name="hcreate_label_class">Class:</string>
+    <string name="hcreate_label_subject">Subject:</string>
+    <string name="hcreate_label_due">Due*:</string>
+    <string name="hcreate_label_assigned">Assigned*:</string>
+    
+    <!-- Homework Creation Fragment:Hints -->
+    <string name="hcreate_edit_hint_name">e.g. English Paper</string>
+    <string name="hcreate_edit_hint_class">e.g. Mr. Clark\'s Class</string>
+    <string name="hcreate_edit_hint_subject">e.g. English</string>
+    <string name="hcreate_edit_hint_date">dd/MM/yyyy</string>
+    <string name="hcreate_edit_hint_keywords">e.g. Research Paper; Report; Major Grade</string>
+    
+    <!-- Toast! -->
+    <string name="toast_message_hcreate_failure">Assignment Creation Failed!</string>
+    <string name="toast_message_hinfo_failure">Unable to edit assignment!</string>
+    <string name="toast_message_hcreate_failure_name">\"Name\" was not set.</string>
+    <string name="toast_message_hcreate_failure_due_unset">The due date was not set.</string>
+    <string name="toast_message_hcreate_failure_due_format">The due date is not correctly formatted.</string>
+    <string name="toast_message_hcreate_failure_assigned_unset">The assigned date was not set.</string>
+    <string name="toast_message_hcreate_failure_assigned_format">The assigned date is not correctly formatted.</string>
+    <string name="toast_message_hremove_failure">Multiple Assignment Deletion Failed!</string>
+    <string name="toast_message_hremove_failure_date_unset">The reference date was not set.</string>
+    <string name="toast_message_hremove_failure_date_format">The reference date is not correctly formatted.</string>
+    
+    <!-- Homework Info Fragment:Dialog -->
+    <string name="hinfo_dialog_title">Assignment</string>
+    
+    <!-- Homework Removal Fragment:Labels -->
+    <string name="hremove_main_label">Remove Multiple Assignments</string>
+    <string name="hremove_removal_type_label_on">Remove assignments due on the selected date?</string>
+    <string name="hremove_removal_type_label_before">Remove assignments due before the selected date?</string>
+    <string name="hremove_removal_type_label_after">Remove assignments due after the selected date?</string>
+    <string name="hremove_label_date">Date:</string>
+    <string name="hremove_main_submit">Remove Assignment</string>
+    <string name="hremove_main_label_keywords">Keywords to Remove (separate by \";\"):</string>
+    
+</resources>

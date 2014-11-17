@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:id="@+id/hremove_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView android:id="@+id/hremove_main_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/margin_medium_vertical"
+            android:text="@string/hremove_main_label"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/text_default"/>
+        
+        <Switch android:id="@+id/hremove_removal_type_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hremove_main_label"
+            android:layout_marginTop="@dimen/margin_small_vertical"
+            android:layout_marginBottom="@dimen/margin_small_vertical"
+            android:layout_marginLeft="@dimen/margin_small_horizontal"
+            android:layout_marginRight="@dimen/margin_small_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/hremove_removal_type_label_on"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/text_small"/>
+            
+        <Switch android:id="@+id/hremove_removal_type_before"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hremove_removal_type_on"
+            android:layout_marginTop="@dimen/margin_small_vertical"
+            android:layout_marginBottom="@dimen/margin_small_vertical"
+            android:layout_marginLeft="@dimen/margin_small_horizontal"
+            android:layout_marginRight="@dimen/margin_small_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/hremove_removal_type_label_before"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/text_small"/>
+        
+       <Switch android:id="@+id/hremove_removal_type_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hremove_removal_type_before"
+            android:layout_marginTop="@dimen/margin_small_vertical"
+            android:layout_marginBottom="@dimen/margin_small_vertical"
+            android:layout_marginLeft="@dimen/margin_small_horizontal"
+            android:layout_marginRight="@dimen/margin_small_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/hremove_removal_type_label_after"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/text_small"/>
+        
+        <LinearLayout android:id="@+id/hremove_date_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hremove_removal_type_after"
+            android:paddingTop="@dimen/margin_medium_vertical"
+            android:paddingBottom="@dimen/margin_large_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            
+            <TextView android:id="@+id/hremove_date_section_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginTop="@dimen/margin_small_vertical"
+                android:layout_marginBottom="@dimen/margin_small_vertical"
+                android:layout_marginLeft="@dimen/margin_small_horizontal"
+                android:layout_marginRight="@dimen/margin_small_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/hremove_label_date"
+                android:textColor="@android:color/primary_text_dark"/>
+            
+            <Button android:id="@+id/hremove_date_section_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:onClick="pickDate"
+                android:text="@string/hcreate_main_choice"/>
+            
+            <EditText android:id="@+id/hremove_date_section_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:inputType="date"
+                android:hint="@string/hcreate_edit_hint_date"/>
+                        
+        </LinearLayout>
+        
+        <TextView android:id="@+id/hremove_main_keywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small_vertical"
+            android:layout_marginBottom="@dimen/margin_small_vertical"
+            android:layout_marginLeft="@dimen/margin_small_horizontal"
+            android:layout_marginRight="@dimen/margin_small_horizontal"
+            android:layout_below="@id/hremove_date_section"
+            android:text="@string/hremove_main_label_keywords"
+            android:textColor="@android:color/primary_text_dark"/>
+        
+        <EditText android:id="@+id/hremove_main_keywords_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small_vertical"
+            android:layout_marginBottom="@dimen/margin_large_vertical"
+            android:layout_marginLeft="@dimen/margin_small_horizontal"
+            android:layout_marginRight="@dimen/margin_small_horizontal"
+            android:layout_below="@id/hremove_main_keywords"
+            android:inputType="textMultiLine"
+            android:hint="@string/hcreate_edit_hint_keywords"/>
+        
+        <Button android:id="@+id/hremove_main_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hremove_main_keywords_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_large_vertical"
+            android:onClick="batchRemoveHomework"
+            android:text="@string/hremove_main_submit"
+            android:textColor="@android:color/primary_text_dark"/>
+        
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_medium_horizontal"
+    android:layout_marginRight="@dimen/margin_medium_horizontal"
+    android:paddingBottom="@dimen/margin_medium_vertical"
+    android:paddingTop="@dimen/margin_small_vertical"
+    android:paddingLeft="@dimen/margin_small_horizontal"
+    android:paddingRight="@dimen/margin_small_horizontal">
+    
+    <TextView android:id="@+id/listview_label_name"
+        style="@style/style_listview_text_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView android:id="@+id/listview_label_due"
+        style="@style/style_listview_text_small"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listview_label_name"/>
+    
+    <TextView android:id="@+id/listview_label_assigned"
+        style="@style/style_listview_text_small"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listview_label_name"
+        android:layout_toRightOf="@id/listview_label_due"
+        android:layout_marginLeft="@dimen/margin_small_horizontal"/>
+    
+    <TextView android:id="@+id/listview_label_keywords"
+        style="@style/style_listview_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listview_label_due"
+        android:paddingLeft="@dimen/margin_small_horizontal"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
